@@ -146,15 +146,24 @@ table {
   justify-content: flex-end;
   padding: @padding;
   margin: @margin;
-  border: @border;
 }
 .intro_display {
   display: flex;
   flex-direction: column;
   padding: 3%;
   margin: @margin;
-  border: @border;
   background: #e8ecee;
+}
+
+.button_config {
+  padding: 1rem 4rem;
+  margin-top: @margin;
+  cursor: pointer;
+  background: #808080;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 2rem;
 }
 
 html,
@@ -174,7 +183,7 @@ h5 {
 }
 
 .container {
-  max-width: 880px;
+  max-width: 80vw;
   margin: 0 auto;
   border: 2px solid blue;
 }
@@ -201,7 +210,7 @@ header {
   .intro_display;
 
   .intro-top {
-    border: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
     padding-bottom: @padding;
     margin-bottom: @margin;
     .portrait {
@@ -218,16 +227,17 @@ header {
       font-size: 3rem;
     }
   }
+
   .intro-bottom {
-    display: flex;
-    border: @border;
+    padding-bottom: 4%;
 
     p {
       font-size: 2rem;
+      margin-bottom: 4%;
     }
 
     button {
-      width: 10%;
+      .button_config;
     }
   }
 }
